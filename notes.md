@@ -75,3 +75,7 @@ https://dart.dev/guides/language/language-tour
         '/': (context) => const LoginPage(), // or home: LoginPage();
         '/home': (context) => const HomePage()
       },
+
+### Child and Children
+
+If a container or widget contains one item or widget so it's key will be child or if a widget contains more than one item so it's key will be children.
