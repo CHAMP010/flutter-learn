@@ -48,3 +48,30 @@ child: Text('Hello World!'),
   etc.
 
 https://dart.dev/guides/language/language-tour
+
+## Flutter
+
+### Theme and AppBar
+
+    themeMode: ThemeMode.light,
+      theme: ThemeData(
+          // primarySwatch: Colors.red,
+          ),
+      darkTheme: ThemeData(
+        // primarySwatch: Colors.deepPurple,
+        brightness: Brightness.dark,
+      ),
+
+    appBar: AppBar(
+      title: const Text("Catalogue App"),
+    ),
+    drawer: const Drawer(),
+
+### Routes
+
+    initialRoute: "/home", // this will allow you to change default or initial
+                            // route (by default initialRoute: "/")
+    routes: {
+        '/': (context) => const LoginPage(), // or home: LoginPage();
+        '/home': (context) => const HomePage()
+      },
