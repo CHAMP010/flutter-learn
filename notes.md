@@ -79,3 +79,23 @@ https://dart.dev/guides/language/language-tour
 ### Child and Children
 
 If a container or widget contains one item or widget so it's key will be child or if a widget contains more than one item so it's key will be children.
+
+### Images
+
+#### To add assets to your application, add an assets section, like this:
+
+assets:
+
+- images/a_dot_burr.jpeg
+
+- images/a_dot_ham.jpeg
+
+An image asset can refer to one or more resolution-specific "variants", see
+
+- https://flutter.dev/assets-and-images/#resolution-aware.
+
+- For details regarding adding assets from package dependencies, see
+
+- https://flutter.dev/assets-and-images/#from-packages
+
+#### To add packages use pub.dev
