@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_crash_course/models/catalog.dart';
 import 'package:flutter_crash_course/widgets/drawer.dart';
+import 'package:flutter_crash_course/widgets/item_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -20,8 +22,16 @@ class HomePage extends StatelessWidget {
           "Catalog App",
         ),
       ),
-      body: Center(
-        child: Text('Welcome to $days days of flutter by $name.'),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: ListView.builder(
+          itemCount: CatalogModel.items.length,
+          itemBuilder: (context, index) {
+            return ItemWidget(
+              item: CatalogModel.items[index],
+            );
+          },
+        ),
       ),
       drawer: const MyDrawer(),
     );
